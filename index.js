@@ -1,18 +1,18 @@
 let count = 0;
 let timer;
-
-function timecount(){
-    count++;
-    CountQueuingStrategy.innerHTML = count;
+let Counting = document.getElementById("Couting");
+function timecount() {
+  count++;
+  Counting.innerHTML = count;
 }
-function Star(){
-    timer = setInterval(timecount,500)
+function Start() {
+  timer = setInterval(timecount, 1000);
 }
-function Stop(){
-    clearInterval(timer)
+function Stop() {
+  clearInterval(timer);
 }
-function Reset(){
-    clearInterval(timer);
-    CountQueuingStrategy.innerHTML = "0";
-    count = 0;
+function Reset() {
+  clearInterval(timer);
+  Counting.innerHTML = "0";
+  count = 0;
 }
